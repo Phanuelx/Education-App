@@ -1,0 +1,56 @@
+/* 
+  Add this to your src/index.css file or create a new file called src/styles/ui-overrides.css 
+  and import it in your main.jsx/App.jsx
+*/
+
+/* Fix dialog backdrop opacity */
+.fixed.inset-0.z-50.bg-background.bg-opacity-80.backdrop-blur-sm {
+    background-color: rgba(0, 0, 0, 0.4) !important; /* Less dark overlay */
+    backdrop-filter: blur(2px) !important; /* Less blur */
+  }
+  
+  /* Make dialog content more opaque */
+  .fixed.z-50.grid.w-full.gap-4.bg-background.p-6,
+  [role="dialog"] {
+    background-color: white !important; /* Solid background */
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important; /* Better shadow */
+  }
+  
+  /* Ensure dropdowns have solid backgrounds */
+  [role="listbox"] {
+    background-color: white !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  }
+  
+  /* Make select content solid */
+  .SelectContent {
+    background-color: white !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+  
+  /* Ensure select dropdown items are visible */
+  .SelectItem {
+    background-color: white !important;
+  }
+  
+  /* Selected state background */
+  .SelectItem[data-highlighted] {
+    background-color: #f7f7f7 !important;
+  }
+  
+  /* Dialog content area */
+  .DialogContent {
+    background-color: white !important;
+  }
+  
+  /* Fix alert dialogs */
+  .AlertDialogContent {
+    background-color: white !important;
+  }
+  
+  /* Popover content */
+  .PopoverContent {
+    background-color: white !important;
+    border: 1px solid #e2e8f0 !important;
+  }
