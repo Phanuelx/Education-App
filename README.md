@@ -128,10 +128,10 @@ PORT=5000
 4. Run the application
 ```bash
 # Start the server (from the server directory)
-npm run dev
+npm run serve
 
 # In a new terminal, start the client (from the client directory)
-npm start
+npm run dev
 ```
 
 5. Open your browser and navigate to `http://localhost:3000`
